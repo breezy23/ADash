@@ -1,13 +1,31 @@
-.ribbon {
+body, html {
+	margin: 0;
+	padding: 0;
+}
 
+.ribbon {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: auto auto auto auto;
 }
 
 .body {
 
 }
 
+.news {
+	color:#ffffff;
+	height: 1em;
+	margin: auto;
+}
+
 .feet {
-	position: absolute;
+	align-items: center;
 	bottom: 0;
+	background-color: #000000;
+	color: #ffffff;
+	display: flex;
 	height: 2em;
+	position: absolute;
+	width: 100%;
 }
