@@ -3,6 +3,10 @@ body, html {
 	padding: 0;
 }
 
+p {
+	margin: 0;
+}
+
 .body {
 
 }
@@ -30,9 +34,16 @@ body, html {
 }
 
 .ribbon {
+	align-items: center;
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto max-content;
+	justify-items: end;
+	width: 100%;
+}
+
+.ribbon_section {
+
 }
 
 .time {
@@ -48,4 +59,10 @@ body, html {
 	font-size: 3em;
 	font-weight: bold;
 	margin: 0;
+}
+
+.weather {
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: max-content max-content max-content;
 }

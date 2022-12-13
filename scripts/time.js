@@ -26,6 +26,10 @@ function updateTime() {
 		hour -= 12;
 	}
 
+	if(hour == 0) {
+		hour = 12;
+	}
+
 	if(minute.length < 2) {
 		minute = "0"+minute;
 	}

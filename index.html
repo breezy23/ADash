@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/weather-icons.min.css">
 	</head>
 	<body>
 		<div class="ribbon">
@@ -12,7 +13,21 @@
 				rawrx3
 			</div>
 			<div class="ribbon_section weather">
-				rawrx3
+				<div class="weather_container" id="weather0">
+					<p id="d0">day</p>
+					<i id="i0" class="wi wi-cloudy"></i>
+					<p id="t0">temp</p>
+				</div>
+				<div class="weather_container" id="weather1">
+					<p id="d1">day</p>
+					<i id="i1" class="wi wi-cloudy"></i>
+					<p id="t1">temp</p>
+				</div>
+				<div class="weather_container" id="weather2">
+					<p id="d2">day</p>
+					<i id="i2" class="wi wi-cloudy"></i>
+					<p id="t2">temp</p>
+				</div>		
 			</div>
 			<div class="ribbon_section time">
 				<span class="t_value" id="t_value">Time Value here</span>
@@ -27,6 +42,7 @@
 			<div class="news">uwu u so warm</div>
 		</div>
 
+		<script src="scripts/weather.js"></script>
 		<script src="scripts/time.js"></script>
 		<script src="scripts/controller.js"></script>
 	</body>
