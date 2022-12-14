@@ -11,6 +11,21 @@ p {
 
 }
 
+.current_condition {
+	grid-column-start: 1;
+}
+
+.current_header {
+}
+
+.current_icon {
+	align-self: center;
+}
+
+.dash_icon {
+	justify-self: start;
+}
+
 .date {
 	font-size: 1em;
 	margin: 0;
@@ -37,7 +52,7 @@ p {
 	align-items: center;
 	display: grid;
 	grid-auto-flow: row;
-	grid-template-columns: auto auto auto max-content;
+	grid-template-columns: auto max-content max-content max-content;
 	justify-items: end;
 	width: 100%;
 }
@@ -65,4 +80,11 @@ p {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: max-content max-content max-content;
+}
+
+.weather_current {
+	align-items: center;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: auto max-content max-content;
 }
