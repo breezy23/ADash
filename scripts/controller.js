@@ -33,6 +33,7 @@ setInterval(() => {
 function init() {
 	updateTime();
 	getWeather();
+	getNews();
 
 	// Resize twitter widget so that view isn't broken
 	// Hacky solution but should work :^)

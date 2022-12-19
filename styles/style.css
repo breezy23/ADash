@@ -54,6 +54,7 @@ p {
 	color: #ffffff;
 	display: flex;
 	height: 2em;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -69,9 +70,19 @@ p {
 }
 
 .news {
-	color:#ffffff;
 	height: 1em;
 	margin: auto;
+	overflow: hidden;
+	width: fit-content;
+}
+
+.news-item {
+	height: 1em;
+	max-height: 1em;
+	padding-left: 2ex;
+	padding-right: 2ex;
+	white-space: nowrap;
+	width: fit-content;
 }
 
 .ribbon {
@@ -101,9 +112,6 @@ p {
 	font-size: 3em;
 	font-weight: bold;
 	margin: 0;
-}
-
-.twitter-container {
 }
 
 .weather {
