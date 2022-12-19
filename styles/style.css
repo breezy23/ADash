@@ -3,6 +3,12 @@ body, html {
 	padding: 0;
 }
 
+body {
+	display: grid;
+	grid-template-rows: 5em auto 2em;
+	height: 100vh;
+}
+
 img {
 	max-height: 100%;
 	max-width: 100%;
@@ -13,7 +19,9 @@ p {
 }
 
 .body {
-
+	display: grid;
+	grid-template-columns: 25% 75%;
+	overflow: hidden;
 }
 
 .current_condition {
@@ -41,12 +49,10 @@ p {
 
 .feet {
 	align-items: center;
-	bottom: 0;
 	background-color: #000000;
 	color: #ffffff;
 	display: flex;
 	height: 2em;
-	position: absolute;
 	width: 100%;
 }
 
