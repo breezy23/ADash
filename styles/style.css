@@ -20,7 +20,8 @@ p {
 
 .body {
 	display: grid;
-	grid-template-columns: 25% 75%;
+	grid-template-columns: 30% 70%;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -62,6 +63,11 @@ p {
 	max-height: 100%;
 }
 
+.image-container {
+	align-self: center;
+	justify-self: end;
+}
+
 .news {
 	color:#ffffff;
 	height: 1em;
@@ -95,6 +101,9 @@ p {
 	font-size: 3em;
 	font-weight: bold;
 	margin: 0;
+}
+
+.twitter-container {
 }
 
 .weather {
