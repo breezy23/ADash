@@ -1,8 +1,8 @@
 const m = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const w = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-const t = document.getElementById("t_value");
-const s = document.getElementById("t_suffix");
+const t = document.getElementById("t-value");
+const s = document.getElementById("t-suffix");
 const d = document.getElementById("date");
 
 function updateTime() {

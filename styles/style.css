@@ -25,18 +25,18 @@ p {
 	overflow: hidden;
 }
 
-.current_condition {
+.current-condition {
 	grid-column-start: 1;
 }
 
-.current_header {
+.current-header {
 }
 
-.current_icon {
+.current-icon {
 	align-self: center;
 }
 
-.dash_icon {
+.dash-icon {
 	flex: 1 1 auto;
 	height: 100%;
 	max-height: 50px;
@@ -95,7 +95,7 @@ p {
 	width: 100%;
 }
 
-.ribbon_section {
+.ribbon-section {
 
 }
 
@@ -104,11 +104,11 @@ p {
 	text-align: right;
 }
 
-.t_suffix {
+.t-suffix {
 	font-size: 3em;
 }
 
-.t_value {
+.t-value {
 	font-size: 3em;
 	font-weight: bold;
 	margin: 0;
@@ -120,9 +120,13 @@ p {
 	grid-template-columns: max-content max-content max-content;
 }
 
-.weather_current {
+.weather-current {
 	align-items: center;
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: auto max-content max-content;
+}
+
+.weather-alert {
+
 }

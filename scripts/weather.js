@@ -37,9 +37,9 @@ function buildWeather() {
 
 	// Create current weather
 	// Should have thought ahead oh well
-	document.getElementById("c_icon").className = getStyles(undefined, current.weathercode) + " current_icon";
-	document.getElementById("c_condition").innerHTML = condition;
-	document.getElementById("c_temp").innerHTML = current.temperature+"\u00B0F";
+	document.getElementById("c-icon").className = getStyles(undefined, current.weathercode) + " current-icon";
+	document.getElementById("c-condition").innerHTML = condition;
+	document.getElementById("c-temp").innerHTML = current.temperature+"\u00B0F";
 }
 
 // Get response from open-meteo
@@ -126,3 +126,27 @@ function getStyles(daily, index) {
 	return styles;
 
 }
+
+function weatherAlertCheck() {
+	if(out.features.length > 0) {
+		const alertDiv = document.createElement("div");
+		const alert = out.features[0];
+
+		alertDiv.textContent = alert.properties.get("event");
+
+		console.log(alertDiv);
+	} else{
+
+	}
+}
+
+// 60 Second timer for weather alerts
+setInterval(() => {
+	// Get weather alerts from the government
+	// It's tin hat time! :D
+	fetch(wa)
+     	.then(res => res.json())
+		.then((out) => {
+			weatherAlertCheck();
+	}).catch(err => console.error(err));
+}, 60*1000)

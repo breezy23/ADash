@@ -32,11 +32,11 @@ async function getNews() {
   		.then((response) => response.json())
   		.then((data) => {
   			articles = data;
-  			news_init();
+  			newsInit();
   		})
 }
 
-function news_init() {
+function newsInit() {
 	i = 0;
 	document.getElementById("news").textContent = articles[0].title;
 }

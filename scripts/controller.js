@@ -9,15 +9,6 @@ let weatherAlert;
 
 init();
 
-// Get weather alerts from the government
-// It's tin hat time! :D
-fetch(wa)
-     	.then(res => res.json())
-	.then((out) => {
-		weatherAlert = out;
-		console.log('Alerts: ', weatherAlert);
-}).catch(err => console.error(err));
-
 // Start a lot of timers
 // 1 second timer
 setInterval(() => {
@@ -34,6 +25,7 @@ function init() {
 	updateTime();
 	getWeather();
 	getNews();
+	weatherAlert();
 
 	// Resize twitter widget so that view isn't broken
 	// Hacky solution but should work :^)
