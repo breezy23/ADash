@@ -21,6 +21,7 @@ p {
 .body {
 	display: grid;
 	grid-template-columns: 30% 70%;
+	grid-template-rows: max(0, 2em), auto;
 	height: 100%;
 	overflow: hidden;
 }
@@ -66,6 +67,7 @@ p {
 
 .image-container {
 	align-self: center;
+	grid-row: 2;
 	justify-self: end;
 }
 
@@ -104,6 +106,10 @@ p {
 	text-align: right;
 }
 
+.twitter-container {
+	grid-row: 2;
+}
+
 .t-suffix {
 	font-size: 3em;
 }
@@ -120,13 +126,19 @@ p {
 	grid-template-columns: max-content max-content max-content;
 }
 
+.weather-alert {
+	align-content: center;
+	background-color: #FF0000;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	grid-column-start: span 2;
+	justify-content: center;
+}
+
 .weather-current {
 	align-items: center;
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: auto max-content max-content;
-}
-
-.weather-alert {
-
 }

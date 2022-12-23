@@ -25,7 +25,7 @@ function init() {
 	updateTime();
 	getWeather();
 	getNews();
-	weatherAlert();
+	weatherAlertCheck();
 
 	// Resize twitter widget so that view isn't broken
 	// Hacky solution but should work :^)

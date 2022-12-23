@@ -127,26 +127,33 @@ function getStyles(daily, index) {
 
 }
 
+// Get weather alerts from the government
+// It's tin hat time! :D
 function weatherAlertCheck() {
-	if(out.features.length > 0) {
-		const alertDiv = document.createElement("div");
-		const alert = out.features[0];
+	fetch(wa)
+     	.then(res => res.json())
+		.then((out) => {
+			if(out.features.length > 0) {
+				const alertDiv = document.createElement("flexbox");
+				const alert = out.features[0];
+				console.log(alert);
 
-		alertDiv.textContent = alert.properties.get("event");
+				alertDiv.textContent = alert.properties.event;
+				alertDiv.classList.add("weather-alert");
+				alertDiv.id = "alert";
 
-		console.log(alertDiv);
-	} else{
-
-	}
+				if(document.getElementById(alert) === null) {
+					document.getElementById("body").prepend(alertDiv);
+				}
+			} else{
+				if(docuement.getElementById("alert") !== null) {
+					document.getElementById("alert").remove();
+				} 
+			}
+	}).catch(err => console.error(err));
 }
 
 // 60 Second timer for weather alerts
 setInterval(() => {
-	// Get weather alerts from the government
-	// It's tin hat time! :D
-	fetch(wa)
-     	.then(res => res.json())
-		.then((out) => {
-			weatherAlertCheck();
-	}).catch(err => console.error(err));
+	weatherAlertCheck();
 }, 60*1000)
