@@ -133,6 +133,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	grid-column-start: span 2;
+	height: 1.5em;
 	justify-content: center;
 	margin: 0;
 }

@@ -29,5 +29,5 @@ function init() {
 
 	// Resize twitter widget so that view isn't broken
 	// Hacky solution but should work :^)
-	document.getElementById("twitter").setAttribute("data-height", document.getElementById("body").clientHeight); // Holy shit that worked
+	document.getElementById("twitter").setAttribute("data-height", "100%"); // Holy shit that worked
 }
