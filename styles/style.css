@@ -66,10 +66,12 @@ p {
 }
 
 .image-container {
-	display: block;
-	height: auto;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
   	margin: auto;
-  	width: auto;
+  	width: 100%;
 }
 
 .news {
