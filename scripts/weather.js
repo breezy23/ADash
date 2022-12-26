@@ -138,7 +138,7 @@ function weatherAlertCheck() {
 				const alert = out.features[0];
 				console.log(alert);
 
-				alertDiv.textContent = alert.properties.event;
+				alertDiv.textContent = alert.properties.headline;
 				alertDiv.classList.add("weather-alert");
 				alertDiv.id = "alert";
 

@@ -134,6 +134,7 @@ p {
 	flex-wrap: wrap;
 	grid-column-start: span 2;
 	justify-content: center;
+	margin: 0;
 }
 
 .weather-current {
