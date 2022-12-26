@@ -10,8 +10,8 @@ body {
 }
 
 img {
-	max-height: 100%;
-	max-width: 100%;
+	max-height:100%;
+	max-width:100%;
 }
 
 p {
@@ -61,16 +61,14 @@ p {
 
 .icon {
 	background-image: url("../assets/phi.png");
-	background-size: contain;
-	max-height: 100%;
 }
 
 .image-container {
 	align-items: center;
 	display: flex;
-	height: 100%;
-	justify-content: center;
-  	margin: auto;
+  	flex-flow: row nowrap;
+  	height: 100%;
+  	justify-content: center;
   	width: 100%;
 }
 
