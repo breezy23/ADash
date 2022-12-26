@@ -9,6 +9,10 @@ let weatherAlert;
 
 init();
 
+setInterval(() => {
+	getImage();
+}, 500);
+
 // Start a lot of timers
 // 1 second timer
 setInterval(() => {
@@ -31,6 +35,7 @@ function init() {
 	getWeather();
 	getNews();
 	weatherAlertCheck();
+	getImage();
 
 	// Resize twitter widget so that view isn't broken
 	// Hacky solution but should work :^)

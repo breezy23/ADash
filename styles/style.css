@@ -66,8 +66,10 @@ p {
 }
 
 .image-container {
-	align-self: center;
-	justify-self: end;
+	display: block;
+	height: auto;
+  	margin: auto;
+  	width: auto;
 }
 
 .news {
