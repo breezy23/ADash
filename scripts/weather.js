@@ -68,58 +68,58 @@ function getStyles(daily, index) {
 	// Not an effeicient way, but I'm a simple man who doesn't
 	// understand the nuances of weathercodes
 	if(code < 3) {
-		styles += "wi-day-sunny";
+		styles += "wi-sunny";
 		condition = "Taste the sun!";
 	} else if (code < 20) {
-		styles += "wi-day-cloudy";
+		styles += "wi-cloudy";
 		condition = "Cloudy";
 	} else if (code < 22) {
-		styles += "wi-day-sprinkle";
+		styles += "wi-sprinkle";
 		condition = "Wet";
 	} else if (code == 22) {
-		styles += "wi-day-snow";
-		condition = "Snow???";
+		styles += "wi-snow";
+		condition = "Snow??? :o";
 	} else if (code < 25) {
-		styles += "wi-day-rain-mix";
+		styles += "wi-rain-mix";
 		condition = "Solid rain?";
 	} else if (code == 25) {
-		styles += "wi-day-rain";
+		styles += "wi-rain";
 		condition = "It's raining.";
 	} else if (code < 28) {
-		styles += "wi-day-rain-mix";
+		styles += "wi-rain-mix";
 		condition = "Rain but also solid"
 	} else if (code == 28) {
-		styles += "wi-day-fog";
+		styles += "wi-fog";
 		condition = "Foggy :o"
 	} else if (code == 29) {
-		styles += "wi-day-thunderstorm";
+		styles += "wi-thunderstorm";
 		condition = "Thunderstorm! :D";
 	} else if (code < 40) {
-		styles += "wi-day-snow-wind";
+		styles += "wi-snow-wind";
 		condition = "Snowing! :D"
 	} else if (code < 50) {
-		styles += "wi-day-fog";
+		styles += "wi-fog";
 		condition = "Foggy :o";
 	} else if (code < 60) {
-		styles += "wi-day-sprinkle";
+		styles += "wi-sprinkle";
 		condition = "Sprinkling";
 	} else if (code < 70) {
-		styles += "wi-day-rain";
+		styles += "wi-rain";
 		condition = "Raining";
 	} else if (code < 80) {
-		styles += "wi-day-snow-wind";
+		styles += "wi-snow-wind";
 		condition = "Snowing";
 	} else if (code < 83) {
-		styles += "wi-day-rain-wind";
+		styles += "wi-rain-wind";
 		condition = "Raining";
 	} else if (code < 85) {
-		styles += "wi-day-rain-mix";
+		styles += "wi-rain-mix";
 		condition = "Rainy mix";
 	} else if (code < 91) {
-		styles += "wi-day-snow-wind";
+		styles += "wi-snow-wind";
 		condition = "Snowing";
 	} else {
-		styles += "wi-day-thunderstorms";
+		styles += "wi-thunderstorms";
 		condition = "Thunderstorms";
 	}
 
