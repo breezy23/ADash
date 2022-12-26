@@ -21,7 +21,6 @@ p {
 .body {
 	display: grid;
 	grid-template-columns: 30% 70%;
-	grid-template-rows: max(0, 2em), auto;
 	height: 100%;
 	overflow: hidden;
 }
@@ -67,7 +66,6 @@ p {
 
 .image-container {
 	align-self: center;
-	grid-row: 2;
 	justify-self: end;
 }
 
@@ -107,7 +105,6 @@ p {
 }
 
 .twitter-container {
-	grid-row: 2;
 }
 
 .t-suffix {

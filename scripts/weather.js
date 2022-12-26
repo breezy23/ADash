@@ -138,6 +138,10 @@ function weatherAlertCheck() {
 				const alert = out.features[0];
 				console.log(alert);
 
+				if(document.getElementById("alert") !== null) {
+					document.getElementById("alert").remove();
+				} 
+
 				alertDiv.textContent = alert.properties.headline;
 				alertDiv.classList.add("weather-alert");
 				alertDiv.id = "alert";
@@ -145,10 +149,6 @@ function weatherAlertCheck() {
 				if(document.getElementById(alert) === null) {
 					document.getElementById("body").prepend(alertDiv);
 				}
-			} else{
-				if(docuement.getElementById("alert") !== null) {
-					document.getElementById("alert").remove();
-				} 
 			}
 	}).catch(err => console.error(err));
 }
