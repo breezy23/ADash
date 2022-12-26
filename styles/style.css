@@ -21,6 +21,7 @@ p {
 .body {
 	display: grid;
 	grid-template-columns: 30% 70%;
+	grid-template-rows: min-content 1fr;
 	height: 100%;
 	overflow: hidden;
 }
@@ -130,7 +131,6 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	grid-column-start: span 2;
-	height: 1.5em;
 	justify-content: center;
 	margin: 0;
 }

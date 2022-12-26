@@ -15,6 +15,11 @@ setInterval(() => {
 	updateTime();
 }, 1000);
 
+// 60 Second timer for weather alerts
+setInterval(() => {
+	weatherAlertCheck();
+}, 60*1000)
+
 // 30 min timer
 setInterval(() => {
 	getWeather();

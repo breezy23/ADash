@@ -134,26 +134,14 @@ function weatherAlertCheck() {
      	.then(res => res.json())
 		.then((out) => {
 			if(out.features.length > 0) {
-				const alertDiv = document.createElement("flexbox");
 				const alert = out.features[0];
 				console.log(alert);
 
+				document.getElementById("alert").textContent = alert.properties.headline;
+			} else {
 				if(document.getElementById("alert") !== null) {
-					document.getElementById("alert").remove();
+					document.getElementById("alert").textContent = undefined;
 				} 
-
-				alertDiv.textContent = alert.properties.headline;
-				alertDiv.classList.add("weather-alert");
-				alertDiv.id = "alert";
-
-				if(document.getElementById(alert) === null) {
-					document.getElementById("body").prepend(alertDiv);
-				}
 			}
 	}).catch(err => console.error(err));
 }
-
-// 60 Second timer for weather alerts
-setInterval(() => {
-	weatherAlertCheck();
-}, 60*1000)
