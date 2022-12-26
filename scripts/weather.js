@@ -68,7 +68,7 @@ function getStyles(daily, index) {
 	// Not an effeicient way, but I'm a simple man who doesn't
 	// understand the nuances of weathercodes
 	if(code < 3) {
-		styles += "wi-sunny";
+		styles += "wi-cloud";
 		condition = "Taste the sun!";
 	} else if (code < 20) {
 		styles += "wi-cloudy";
