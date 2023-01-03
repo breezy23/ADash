@@ -1,14 +1,18 @@
 body, html {
+	font-family: Roboto, Arial, Helvetica;
 	margin: 0;
 	padding: 0;
 }
 
 body {
 	display: grid;
-	grid-template-rows: 5em auto 2em;
+	grid-template-rows: 20% auto 2em;
 	height: 100vh;
 }
 
+i {
+	font-size: 4em;
+}
 img {
 	max-height:100%;
 	max-width:100%;
@@ -19,11 +23,19 @@ p {
 }
 
 .body {
+	background-color: #ababab;
 	display: grid;
 	grid-template-columns: 30% 70%;
 	grid-template-rows: min-content 1fr;
 	height: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 1em;
 	overflow: hidden;
+}
+
+.c-temp {
+	text-size: 1em;
 }
 
 .current-condition {
@@ -35,12 +47,23 @@ p {
 
 .current-icon {
 	align-self: center;
+	padding-left: 0.5ex;
+	padding-right: 0.5ex;
+}
+
+.current-condition {
+	text-align: right;
+}
+
+.current-header {
+	text-align: right;
 }
 
 .dash-icon {
 	flex: 1 1 auto;
 	height: 100%;
-	max-height: 50px;
+	max-height: 100px;
+	padding-left: 2em;
 	justify-self: start;
 }
 
@@ -57,10 +80,6 @@ p {
 	height: 2em;
 	overflow: hidden;
 	width: 100%;
-}
-
-.icon {
-	background-image: url("../assets/phi.png");
 }
 
 .image-container {
@@ -94,6 +113,7 @@ p {
 	grid-auto-flow: row;
 	grid-template-columns: auto max-content max-content max-content;
 	justify-items: end;
+	margin-bottom: 1em;
 	max-height: 10em;
 	width: 100%;
 }
@@ -103,11 +123,17 @@ p {
 }
 
 .time {
-	justify-self: end;
 	text-align: right;
+	justify-self: end;
+	padding-right: 2em;
+}
+
+.time-value {
+	text-align: center;
 }
 
 .twitter-container {
+	padding: 1em;
 }
 
 .t-suffix {
@@ -124,6 +150,7 @@ p {
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: max-content max-content max-content;
+	margin-right: 5em;
 }
 
 .weather-alert {
@@ -137,9 +164,33 @@ p {
 	margin: 0;
 }
 
+.weather-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
 .weather-current {
 	align-items: center;
 	display: grid;
 	grid-auto-flow: row;
 	grid-template-columns: auto max-content max-content;
+	margin-right: 3em;
+}
+
+.wi {
+	font-size: 4em;
+}
+
+.wc-day {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.wc-temp {
+	font-size: 1em;
+	margin-top: 0.5em;
+	text-align: center;
 }
