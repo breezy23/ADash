@@ -1,7 +1,7 @@
 let curImage = "";
 
 function getImage() {
-	fetch('http://localhost:8000/image')
+	fetch('http://192.168.1.39:8080/image')
   		.then((response) => response.blob())
   		.then((img) => {
   			var objectURL = URL.createObjectURL(img);

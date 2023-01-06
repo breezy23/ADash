@@ -28,7 +28,7 @@ setInterval(() => {
 }, 10*1000)
 
 async function getNews() {
-	fetch('http://localhost:8000/news')
+	fetch('http://192.168.1.39:8080/news')
   		.then((response) => response.json())
   		.then((data) => {
   			articles = data;
