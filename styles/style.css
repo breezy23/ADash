@@ -136,6 +136,10 @@ p {
 	padding: 1em;
 }
 
+.twitter-timeline {
+	height: 100% !important;
+}
+
 .t-suffix {
 	font-size: 3em;
 }
